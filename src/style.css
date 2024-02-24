@@ -1,97 +1,156 @@
 nav ul {
     display: flex;
+    /* Зміна властивості display на flex, щоб зробити меню горизонтальним */
     flex-wrap: nowrap;
+    /* Зміна властивості flex-wrap на nowrap, щоб уникнути переносу елементів меню на новий рядок */
 }
 
 .header_line {
     display: flex;
+    /* Зміна властивості display на flex, щоб зробити елементи горизонтальними */
     justify-content: space-between;
+    /* Зміна властивості justify-content на space-between, щоб рівномірно розподілити простір між елементами */
     align-items: center;
+    /* Зміна властивості align-items на center, щоб вирівняти елементи по вертикалі */
 }
 
 .title_section {
     display: flex;
+    /* Зміна властивості display на flex, щоб зробити елементи горизонтальними */
     align-items: center;
+    /* Зміна властивості align-items на center, щоб вирівняти елементи по вертикалі */
     justify-content: center;
+    /* Зміна властивості justify-content на center, щоб вирівняти елементи по горизонталі */
     padding-bottom: 60px;
+    /* Зміна властивості padding-bottom на 60px, щоб збільшити відступ знизу */
     background-color: var(--primary-color);
+    /* Зміна властивості background-color на var(--primary-color), щоб використовувати змінну */
     border-radius: var(--border-radius-size);
+    /* Зміна властивості border-radius на var(--border-radius-size), щоб використовувати змінну */
     flex-direction: row-reverse;
+    /* Зміна властивості flex-direction на row-reverse, щоб змінити напрямок основного контейнера */
     flex-wrap: wrap;
+    /* Зміна властивості flex-wrap на wrap, щоб дозволити перенос елементів на новий рядок */
 }
 
 main section div {
     flex-wrap: wrap;
+    /* Зміна властивості flex-wrap на wrap, щоб дозволити перенос елементів на новий рядок */
     padding: 0 var(--space-size);
+    /* Зміна властивості padding на 0 var(--space-size), щоб використовувати змінну */
     display: flex;
+    /* Зміна властивості display на flex, щоб зробити елементи горизонтальними */
     flex-direction: row;
+    /* Зміна властивості flex-direction на row, щоб змінити напрямок основного контейнера */
 }
 
 .column {
     margin: var(--space-size);
+    /* Зміна властивості margin на var(--space-size), щоб використовувати змінну */
     flex-shrink: 1;
+    /* Зміна властивості flex-shrink на 1, щоб зменшити розмір елемента при необхідності */
     flex-basis: 0;
+    /* Зміна властивості flex-basis на 0, щоб змінити базовий розмір елемента */
     padding: var(--space-size);
+    /* Зміна властивості padding на var(--space-size), щоб використовувати змінну */
     flex-grow: 1;
+    /* Зміна властивості flex-grow на 1, щоб збільшити розмір елемента при необхідності */
 }
 
 section:first-of-type div:first-of-type .column:first-of-type {
     flex-shrink: 2;
+    /* Зміна властивості flex-shrink на 2, щоб зменшити розмір елемента при необхідності */
     flex-basis: 22px;
+    /* Зміна властивості flex-basis на 22px, щоб змінити базовий розмір елемента */
     height: 420px;
+    /* Зміна властивості height на 420px, щоб змінити висоту елемента */
     background: url('./images/cn-client-bg.jpeg') rgba(29, 14, 21, 0.3);
+    /* Зміна властивості background на url('./images/cn-client-bg.jpeg') rgba(29, 14, 21, 0.3), щоб встановити фонове зображення */
     background-size: cover;
+    /* Зміна властивості background-size на cover, щоб змінити розмір фонового зображення */
     background-blend-mode: multiply;
+    /* Зміна властивості background-blend-mode на multiply, щоб змінити режим змішування */
     padding: var(--space-size);
+    /* Зміна властивості padding на var(--space-size), щоб використовувати змінну */
     color: white;
+    /* Зміна властивості color на white, щоб змінити колір тексту */
     flex-grow: 2;
+    /* Зміна властивості flex-grow на 2, щоб збільшити розмір елемента при необхідності */
 }
 
 .card-first {
     order: 1;
+    /* Зміна властивості order на 1, щоб змінити порядок елементів */
     flex-grow: 1;
+    /* Зміна властивості flex-grow на 1, щоб збільшити розмір елемента при необхідності */
     flex-shrink: 1;
+    /* Зміна властивості flex-shrink на 1, щоб зменшити розмір елемента при необхідності */
     flex-basis: 0;
+    /* Зміна властивості flex-basis на 0, щоб змінити базовий розмір елемента */
 }
 
 .card-second {
     order: 2;
+    /* Зміна властивості order на 2, щоб змінити порядок елементів */
     flex-grow: 1;
+    /* Зміна властивості flex-grow на 1, щоб збільшити розмір елемента при необхідності */
     flex-shrink: 1;
+    /* Зміна властивості flex-shrink на 1, щоб зменшити розмір елемента при необхідності */
     flex-basis: 0;
+    /* Зміна властивості flex-basis на 0, щоб змінити базовий розмір елемента */
 }
 
 .card-third {
     order: 3;
+    /* Зміна властивості order на 3, щоб змінити порядок елементів */
     flex-grow: 1;
+    /* Зміна властивості flex-grow на 1, щоб збільшити розмір елемента при необхідності */
     flex-shrink: 1;
+    /* Зміна властивості flex-shrink на 1, щоб зменшити розмір елемента при необхідності */
     flex-basis: 0;
+    /* Зміна властивості flex-basis на 0, щоб змінити базовий розмір елемента */
 }
 
 .card-fouth {
     order: 4;
+    /* Зміна властивості order на 4, щоб змінити порядок елементів */
     flex-grow: 1;
+    /* Зміна властивості flex-grow на 1, щоб збільшити розмір елемента при необхідності */
     flex-shrink: 1;
+    /* Зміна властивості flex-shrink на 1, щоб зменшити розмір елемента при необхідності */
     flex-basis: 0;
+    /* Зміна властивості flex-basis на 0, щоб змінити базовий розмір елемента */
 }
 
 .card-fifth {
     order: 5;
+    /* Зміна властивості order на 5, щоб змінити порядок елементів */
     flex-grow: 4;
+    /* Зміна властивості flex-grow на 4, щоб збільшити розмір елемента при необхідності */
     flex-shrink: 4;
+    /* Зміна властивості flex-shrink на 4, щоб зменшити розмір елемента при необхідності */
     background-color: white;
+    /* Зміна властивості background-color на white, щоб змінити колір фону */
     color: var(--secondary-color);
+    /* Зміна властивості color на var(--secondary-color), щоб використовувати змінну */
 }
 
 .card-six {
     order: 6;
+    /* Зміна властивості order на 6, щоб змінити порядок елементів */
     flex-grow: 4;
+    /* Зміна властивості flex-grow на 4, щоб збільшити розмір елемента при необхідності */
     flex-shrink: 4;
+    /* Зміна властивості flex-shrink на 4, щоб зменшити розмір елемента при необхідності */
     background: var(--secondary-color);
+    /* Зміна властивості background на var(--secondary-color), щоб змінити колір фону */
 }
 
 footer {
     display: flex;
+    /* Зміна властивості display на flex, щоб зробити елементи горизонтальними */
     justify-content: space-between;
+    /* Зміна властивості justify-content на space-between, щоб рівномірно розподілити простір між елементами */
     align-items: flex-end;
+    /* Зміна властивості align-items на flex-end, щоб вирівняти елементи по вертикалі */
 }
